@@ -1,1 +1,89 @@
-/* Start coding here */
+/* ฟอนต์และพื้นหลัง */
+body {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    background: #fff;
+  }
+  
+  /* กล่องรวมทั้งหมด */
+  .chatroom {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+  }
+  
+  /* แถบหัว */
+  .chat-header {
+    background: #777;
+    color: white;
+    font-size: 24px;
+    padding: 10px 16px;
+    font-family: "Georgia", serif;
+  }
+  
+  /* กล่องแชททุกกล่อง */
+  .chat-bubble-right,
+  .chat-bubble-left {
+    width: 320px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px 20px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  
+  /* ข้อความขวา */
+  .chat-bubble-right {
+    align-self: flex-end;
+  }
+  
+  .green {
+    background: #00c600;
+    color: rgb(0, 0, 0);
+  }
+  
+  .gray {
+    background: #e0e0e0;
+    color: black;
+  }
+  
+  /* ข้อความซ้าย */
+  .chat-bubble-left {
+    background: #777;
+    color: white;
+    align-self: flex-start;
+    width: 220px;
+  }
+  
+  /* หางกล่องสีเขียว */
+  .tail {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #00c600;
+    border-left: 10px solid transparent;
+  }
+  
+  /* ปุ่ม x */
+  .close-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #bbb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    padding: 0;
+  }
+  
