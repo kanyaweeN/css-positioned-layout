@@ -1,1 +1,94 @@
 /* Start coding here */
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  background: #fff;
+  color: black;
+}
+
+.chat-header {
+  background: #888;
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 10px 0 10px 12px;
+  font-family: serif;
+}
+
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.chat-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 35px;
+  margin-right: 0;
+}
+
+.chat-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  margin-right: 35px;
+  margin-left: 0;
+}
+
+.chat-bubble {
+  width: 200px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 0;
+  padding: 0 22px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.chat-bubble.left {
+  background: #888;
+  justify-content: flex-start;
+}
+
+.chat-bubble.right {
+  justify-content: flex-start;
+}
+
+.chat-bubble.green {
+  background: #0c0;
+}
+
+.chat-bubble.gray {
+  background: #eee;
+}
+
+.emoji {
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
