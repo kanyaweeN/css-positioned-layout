@@ -1,5 +1,74 @@
 body {
-  font-family: "Kanit";
+  font-family: "Kanit", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Start coding here */
+/* กรอบสีขาว */
+.card-frame {
+  background: #fff;
+  padding: 10px; 
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: relative;
+}
+
+/* ตัวการ์ดที่อยู่ในกรอบ */
+.card {
+  background: transparent;
+  overflow: visible;
+  border-radius: 16px;
+  position: relative;
+  width: 700px;
+  max-width: 90vw;
+  z-index: 2;
+}
+
+/* กล่องภาพ */
+.card-img-container {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* รูปภาพไม่ต้องมีกรอบ */
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* ป้าย “ปากน้ำ” ยื่นขวา */
+.card-badge {
+  position: absolute;
+  top: 20px;
+  right: -8px;
+  background: rgba(120, 120, 120, 0.8);
+  color: #fff;
+  font-size: 2rem;
+  padding: 8px 32px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  z-index: 999;
+}
+
+/* ชื่อร้านด้านล่าง */
+.card-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 16px 24px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 0 0 16px 16px;
+}
